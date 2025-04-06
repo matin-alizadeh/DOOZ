@@ -1,0 +1,39 @@
+body {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+}
+
+.loc {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #dfc99e, transparent);
+  border: 1px solid #000;
+}
+
+.loc.X {
+  background-image: url("images/X.png");
+}
+
+.loc.O {
+  background-image: url("images/O.png");
+}
+
+div#toaster {
+  position: absolute;
+  top: 200px;
+  left: 46%;
+  background-color: darkseagreen;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
